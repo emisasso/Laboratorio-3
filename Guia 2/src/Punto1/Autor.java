@@ -1,4 +1,6 @@
-public class Autor {
+package Punto1;
+
+public class Autor{
 
     private String nombre;
     private String apellido;
@@ -43,7 +45,7 @@ public class Autor {
     }
 
     public String toString() {
-        return "Autor--> "+
+        return "Punto1.Autor--> "+
                 "nombre= " + nombre +
                 ", apellido= " + apellido +
                 ", email= " + email +
