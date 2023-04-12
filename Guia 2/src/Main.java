@@ -1,7 +1,8 @@
 import Punto1.Autor;
 import Punto1.Libro;
-import Punto2.Cliente;
 import Punto2.Factura;
+import Punto3.Cliente;
+import Punto3.Cuenta;
 
 import java.time.LocalDate;
 import java.util.Random;
@@ -27,10 +28,22 @@ public class Main {
         */
 
         //Punto 2
+        /*
         Cliente cliente1 = new Cliente("emiliano", "emisasso@hotmail.com", 20);
         Factura factura1 = new Factura(5000, LocalDate.of(1996, 1, 25), cliente1);
 
         System.out.println(factura1.imprimFactura());
+        */
 
+        //Punto 3
+        Cliente cliente1 = new Cliente("Emiliano", 'm');
+        System.out.println(cliente1.toString());
+
+        Cuenta cuenta1 = new Cuenta(10000, cliente1);
+        System.out.println(cuenta1.toString());
+        cuenta1.deposito(5000);
+        System.out.println(cuenta1.toString());
+        cuenta1.extraccion(16000);
+        System.out.println(cuenta1.toString());
     }
 }
